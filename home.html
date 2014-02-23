@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <div class="row">
+      <div class="small-10 small-centered large-8 columns">
+          <h1 class="text-center">THERMONATOR</h1>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="small-10 small-centered columns">
+
+        <div class="small-10 small-centered large-8 columns">
+          <img class="fire-btn" src="img/fire-on.svg" />
+          <a href="#" class="button expand radius">DISABLE GAS SUPPLY</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-10 small-centered large-8 columns">
+        <hr/>
+        <h2 class="text-center"> MANAGE THE BURNERS</h2>
+        <hr/>
+
+        <div class="button small-6 columns burners" href="#">  BURNER 1
+          <hr/>
+          <img class="fire-btn" src="img/burner.svg" />
+          <hr/>STATUS : <strong><span id="chosen1">Select State</span></strong>
+          <hr/>
+          <input class="slide small-12" type="range" min="0" max="5" step="1" value="1" onchange="updateSlider1(this.value)" />
+        </div>
+
+        <div class="button small-6 columns burners" href="#">  BURNER 2
+          <hr/>
+          <img class="fire-btn" src="img/burner-on.svg" />
+          <hr/>STATUS : <strong><span id="chosen2">Select State</span></strong>
+          <hr/>
+          <input class="slide small-12" type="range" min="0" max="5" step="1" value="1" onchange="updateSlider2(this.value)" />
+        </div>
+
+        <div class="button small-6 columns burners" href="#">  BURNER 3
+          <hr/>
+          <img class="fire-btn" src="img/burner.svg" /><br/>
+          <hr/>STATUS : <strong><span id="chosen3">Select State</span></strong>
+          <hr/>
+          <input class="slide small-12" type="range" min="0" max="5" step="1" value="1" onchange="updateSlider3(this.value)" />
+        </div>
+
+        <div class="button small-6 columns burners" href="#">  BURNER 4
+          <hr/>
+          <img class="fire-btn" src="img/burner.svg" />
+          <hr/>STATUS : <strong><span id="chosen4">Select State</span></strong>
+          <hr/>
+          <input class="slide small-12" type="range" min="0" max="5" step="1" value="1" onchange="updateSlider4(this.value)" />
+        </div>
+
+        <hr/>
+      </div>
+    </div>
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    
+    <script>
+function updateSlider1(slideAmount) {
+//get the element
+var display = document.getElementById("chosen1");
+//show the amount
+display.innerHTML=slideAmount;
+}
+function updateSlider2(slideAmount) {
+//get the element
+var display = document.getElementById("chosen2");
+//show the amount
+display.innerHTML=slideAmount;
+}
+function updateSlider3(slideAmount) {
+//get the element
+var display = document.getElementById("chosen3");
+//show the amount
+display.innerHTML=slideAmount;
+}
+function updateSlider4(slideAmount) {
+//get the element
+var display = document.getElementById("chosen4");
+//show the amount
+display.innerHTML=slideAmount;
+}
+    </script>
+  </body>
+</html>

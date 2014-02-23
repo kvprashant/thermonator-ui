@@ -1,0 +1,18 @@
+*,body,h1,h2,h3,h4,h5,h6,p,a,input{
+	font-family: 'Lato', sans-serif;
+}
+.header-title{
+	background-color: #3399cc;
+}
+.header-notify{
+	background-color: #999999;
+}
+.header-notify:hover{
+	background-color: #ff7f10;
+	cursor: pointer;
+}
+.burners{
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+}
